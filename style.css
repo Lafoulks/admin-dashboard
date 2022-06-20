@@ -10,15 +10,25 @@
 
 .header {
     display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-column: 2 / 3;
+    border: 1px solid blue;
 }
 
 .sidebar {
     display: grid;
     grid-column: 1 / 2;
+    border: 1px solid red;
+    gap: 20px;
 }
 
 .content {
     display: grid;
     grid-column: 2 / 3;
+    border: 1px solid green;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
