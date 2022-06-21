@@ -20,6 +20,18 @@
     border: 1px solid blue;
 }
 
+#alien1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#alien2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
 .sidebar {
     display: grid;
     grid-column: 1 / 2;
@@ -30,11 +42,8 @@
 
 .content {
     display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-column: 2 / 3;
     border: 1px solid green;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
