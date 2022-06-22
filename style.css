@@ -5,19 +5,42 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
 }
 
-.menu div {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
+.sidebar {
+    border: 1px solid red;
+}
+
+.logo  {
+    border: 1px solid black;
+}
+
+.menu {
+    border: 1px solid black;
+}
+
+.settings {
+    border: 1px solid black;
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column: 2 / 3;
-    border: 1px solid blue;
+    border: 1px solid greenyellow;
+}
+
+.searchbar {
+    border: 1px solid black;
+}
+
+.userinfo {
+    border: 1px solid black;
+}
+
+.username {
+    border: 1px solid black;
+}
+
+.buttons {
+    border: 1px solid black;
 }
 
 #alien1 {
@@ -32,18 +55,30 @@
     border-radius: 50%;
 }
 
-.sidebar {
-    display: grid;
-    grid-column: 1 / 2;
-    border: 1px solid red;
-    background-color: aqua;
-    gap: 20px;
-}
-
 .content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column: 2 / 3;
     border: 1px solid green;
 }
 
+.projects {
+    border: 1px solid black;
+}
+
+.cards {
+    border: 1px solid black;
+}
+
+.announcements {
+    border: 1px solid black;
+}
+
+.announcement-card {
+    border: 1px solid black;
+}
+
+.trending {
+    border: 1px solid black;
+}
+
+.tending-card {
+    border: 1px solid black;
+}
