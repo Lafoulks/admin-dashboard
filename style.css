@@ -13,9 +13,9 @@
 .sidebar {
     padding-left: 30px;
     padding-top: 20px;
-    border: 1px solid red;
     display: grid;
     grid-area: 1 / 1 / 6 / 2;
+    background-color: rgb(49, 104, 12);
 }
 
 .sidebar > .menu > ul {
@@ -48,7 +48,6 @@
 }
 
 .userinfo {
-    border: 1px solid black;
 }
 
 .username {
@@ -56,7 +55,8 @@
 }
 
 .buttons {
-    border: 1px solid black;
+    align-self: flex-end;
+    padding: 15px;
 }
 
 #alien1 {
@@ -75,6 +75,7 @@
     border: 1px solid green;
     display: grid;
     grid-area: 2 / 2 / 6 / 3;
+    background-color: rgb(230, 227, 227);
 }
 
 .projects {
@@ -82,7 +83,17 @@
 }
 
 .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards > div {
     border: 1px solid black;
+    width: 300px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: -5px 0px rgb(189, 142, 12);
+    padding: 10px;
 }
 
 .announcements {
