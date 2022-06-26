@@ -8,8 +8,7 @@
     resize: both;
     overflow: auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 400px 2fr 1fr;
     height: 100vh;
 }
 
@@ -51,8 +50,9 @@ a {
 .header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-area: 1 / 2 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 4;
     padding: 20px;
+    padding-bottom: 70px;
     background-color: #ecfccb;
 }
 
@@ -60,9 +60,18 @@ a {
     border-radius: 10px;
     width: 500px;
     height: 25px;
-    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
     background-repeat: no-repeat;
     background-position: left;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 50px 70px;
+    padding: 10px;
+}
+
+.search img {
+    height: 30px;
 }
 
 .userinfo {
@@ -107,6 +116,7 @@ button {
     height: 30px;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 #alien1 {
@@ -124,8 +134,8 @@ button {
 /* Main */
 
 .content {
-    display: grid;
-    grid-area: 2 / 2 / 6 / 3;
+    display: grid; 
+    grid-area: 2 / 2 / 6 / 4;
     background-color: #f7fee7;
 }
 
@@ -136,7 +146,8 @@ button {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(170px, 1fr));
     gap: 10px;
     padding: 30px;
 }
@@ -159,8 +170,8 @@ button {
 }
 
 .cards2 {
-    grid-area: 1 / 2 / 4 / 3;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 .announcement-text {
@@ -180,6 +191,7 @@ button {
 .announcement-card, .trending-card {
     display: grid;
     justify-content: center;
+    grid-column: 3 / 4;
     border: 1px solid black;
     width: 250px;
     height: 260px;
@@ -190,7 +202,7 @@ button {
 }
 
 .announcement-card:hover, .trending-card:hover {
-    background-color: gold
+    animation: shake 0.5s;
 }
 
 .trending-card img {
@@ -211,4 +223,18 @@ button {
     font-weight: bold;
     padding: 10px;
 }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
