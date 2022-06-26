@@ -79,12 +79,15 @@
 }
 
 .projects {
-    border: 1px solid black;
+    font-weight: bold;
+    padding: 20px;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
 }
 
 .cards > div {
@@ -96,18 +99,41 @@
     padding: 10px;
 }
 
+.cards2 {
+    grid-area: 1 / 2 / 4 / 3;
+    margin-top: 50px;
+}
+
+.announcement-text {
+    font-size: 14px;
+    border-bottom-width: 1px;
+    border-bottom-style :solid;
+    border-bottom-color: rgb(139, 136, 136);
+    padding-bottom: 8px;
+}
+
 .announcements {
+    grid-area: 1 / 2/ 4 / 3;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.announcement-card, .trending-card {
+    display: grid;
+    justify-content: center;
     border: 1px solid black;
+    width: 250px;
+    height: 260px;
+    border-radius: 10px;
+    padding-top: 25px;
 }
 
 .announcement-card {
-    border: 1px solid black;
+   padding-left: 20px;
 }
 
 .trending {
-    border: 1px solid black;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.tending-card {
-    border: 1px solid black;
-}
