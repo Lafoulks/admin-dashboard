@@ -7,10 +7,13 @@
     display: grid;
     resize: both;
     overflow: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
 }
+
+/* Sidebar */
 
 .sidebar {
     padding-left: 30px;
@@ -31,6 +34,19 @@
     line-height: 50px;
     margin-bottom: 150px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+/* Header */
 
 .header {
     display: grid;
@@ -105,6 +121,8 @@ button {
     border-radius: 50%;
 }
 
+/* Main */
+
 .content {
     display: grid;
     grid-area: 2 / 2 / 6 / 3;
@@ -125,6 +143,11 @@ button {
 
 .card {
     background-color: #d9f99d;
+    transition: background-color .5s;
+}
+
+.card:hover {
+    background-color: gold
 }
 .cards > div {
     border: 1px solid rgb(190, 189, 189);
@@ -163,6 +186,21 @@ button {
     border-radius: 10px;
     padding-top: 25px;
     background-color: #d9f99d;
+    transition: background-color .5s;
+}
+
+.announcement-card:hover, .trending-card:hover {
+    background-color: gold
+}
+
+.trending-card img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.trending-card > ul {
+    list-style: none;
 }
 
 .announcement-card {
