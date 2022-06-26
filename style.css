@@ -51,7 +51,7 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-area: 1 / 2 / 2 / 4;
-    padding: 20px;
+    padding: 30px;
     padding-bottom: 70px;
     background-color: #ecfccb;
 }
@@ -104,9 +104,11 @@ a {
 }
 
 .buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: 40px;
+    align-self:flex-end;
     gap: 30px;
-    padding: 15px;
 }
 
 button {
