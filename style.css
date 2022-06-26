@@ -40,9 +40,6 @@
     background-color: #ecfccb;
 }
 
-.search {
-}
-
 .searchbar {
     border-radius: 10px;
     width: 500px;
@@ -82,8 +79,18 @@
 }
 
 .buttons {
-    align-self: flex-end;
+    display: flex;
+    gap: 30px;
     padding: 15px;
+}
+
+button {
+    background-color: rgb(53, 121, 9);
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    border: none;
 }
 
 #alien1 {
