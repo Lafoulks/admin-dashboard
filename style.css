@@ -52,7 +52,7 @@ a {
     grid-template-columns: 2fr 1fr;
     grid-area: 1 / 2 / 2 / 4;
     padding: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     background-color: #ecfccb;
 }
 
@@ -224,6 +224,10 @@ button {
 .trending {
     font-weight: bold;
     padding: 10px;
+}
+
+.content-image {
+    grid-area: 2 / 2 / 2 / 3;
 }
 
 @keyframes shake {
