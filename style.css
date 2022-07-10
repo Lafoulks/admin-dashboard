@@ -28,6 +28,11 @@
     line-height: 50px;
 }
 
+ul li:nth-child(n+1):hover {
+    text-decoration: underline;
+}
+
+
 .sidebar > .settings > ul {
     list-style: none;
     line-height: 50px;
@@ -78,12 +83,14 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 60px);
     grid-template-rows: 20px 20px;
+    align-items: center;
 }
 
 .userinfo p {
     grid-column: 3;
     grid-row: 1;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .username {
@@ -109,6 +116,7 @@ a {
     grid-template-rows: 40px;
     align-self:flex-end;
     gap: 30px;
+    cursor: pointer;
 }
 
 button {
@@ -128,9 +136,14 @@ button {
 }
 
 #alien2 {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+#bell {
+    cursor: pointer;
 }
 
 /* Main */
